@@ -34,3 +34,14 @@ jobs:
           SSH_KEY: ${{ secrets.PANGOLIN_SSH_KEY }}
           SSH_HOST: ${{ secrets.PANGOLIN_SSH_HOST }}
           KNOWN_HOSTS: ${{ secrets.PANGOLIN_KNOWN_HOSTS }}
+
+      - uses: actions/checkout@v3
+
+      - name: 🪢 Setup node
+        uses: actions/setup-node@v3
+
+      - name: ⚒️ Install necessaire tools
+        run: npm i pm2
+
+      - name: 🚀 Deploy
+        run: pm2 deploy ecosystem.config.js pangolin
