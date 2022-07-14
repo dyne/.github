@@ -1,27 +1,11 @@
-name: Pangloin deploy
+name: 🚀 Pangloin deploy
 
 on:
   push:
-    branches: [ $default-branch ]
-  pull_request:
     branches: [ $default-branch ]
 
 jobs:
   build:
     runs-on: ubuntu-latest
-
-    steps:
-      - uses: actions/checkout@v3
-
-      - name: 🗝  Setup staging server
-        uses: ./.github/workflows/node-staging-deploy
-        secrets: inherit
-
-      - name: 🪢 Setup node
-        uses: actions/setup-node@v3
-
-      - name: ⚒️ Install necessaire tools
-        run: npm i pm2
-
-      - name: 🚀 Deploy
-        run: pm2 deploy ecosystem.config.js pangolin
+    uses: dyne/workflows/.github/workflows/node-staging-deploy@main
+    secrets: inherit
