@@ -1,0 +1,6 @@
+{
+  "name": "Pangolin deploy",
+  "description": "Deploy node applications over pm2 on Pangolin staging server",
+  "categories": [ "javascript" ],
+  "filePatterns": ["ecosystem.config.js$"]
+}
