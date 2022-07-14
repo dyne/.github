@@ -6,10 +6,6 @@ concurrency:
 
 on:
   workflow_call:
-    secrets:
-      SSH_USER:
-        required: true
-
 
 jobs:
   deploy:
