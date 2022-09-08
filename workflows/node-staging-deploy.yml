@@ -1,0 +1,43 @@
+name: Staging/Deploy
+
+concurrency:
+  group: staging
+  cancel-in-progress: true
+
+on:
+  workflow_call:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Configure SSH
+        run: |
+          mkdir -p ~/.ssh/
+          echo "$SSH_KEY" > ~/.ssh/staging.key
+          chmod 600 ~/.ssh/staging.key
+          echo "$KNOWN_HOSTS" > ~/.ssh/known_hosts
+          cat >>~/.ssh/config <<END
+          Host deploy_staging
+            HostName $SSH_HOST
+            User $SSH_USER
+            IdentityFile ~/.ssh/staging.key
+            IdentitiesOnly yes
+            StrictHostKeyChecking no
+          END
+        env:
+          SSH_USER: ${{ secrets.BALOO_SSH_USER }}
+          SSH_KEY: ${{ secrets.BALOO_SSH_KEY }}
+          SSH_HOST: ${{ secrets.BALOO_SSH_HOST }}
+          KNOWN_HOSTS: ${{ secrets.BALOO_KNOWN_HOSTS }}
+
+      - uses: actions/checkout@v3
+
+      - name: 🪢 Setup node
+        uses: actions/setup-node@v3
+
+      - name: ⚒️ Install necessaire tools
+        run: npm i pm2
+
+      - name: 🚀 Deploy
+        run: pm2 deploy ecosystem.config.js pangolin
