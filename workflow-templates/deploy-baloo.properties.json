@@ -1,0 +1,6 @@
+{
+  "name": "Baloo deploy",
+  "description": "Deploy node applications over pm2 on Baloo staging server",
+  "categories": [ "javascript" ],
+  "filePatterns": ["ecosystem.config.js$"]
+}
