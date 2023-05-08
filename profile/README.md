@@ -6,8 +6,6 @@ We have more than **20 years of expertise** putting computers at work to **empow
 
 We are **free to share code** and we **code to share freedom** ✊🏽
 
-## TL;DR head over [our linktree](https://linktr.ee/dyne.org)
+## TL;DR head over [our website](https://dyne.org) (links to many chat channels)
 
-## Latest news on our [twitter feed](https://twitter.com/dyneorg)
-
-[![latest tweets](https://github-readme-twitter.gazf.vercel.app/api?id=dyneorg&layout=wide&show_retweet=on)](https://twitter.com/dyneorg)
+## Latest news on [our blog](https://medium.com/think-do-tank) and [fediverse feed](https://toot.community/@dyne)
