@@ -10,4 +10,5 @@
 
 **📢 Get news from us on [our blog](https://news.dyne.org) and tune in to our corner of the [fediverse](https://fed.dyne.org)**
 
+[![Github organization banner](https://github.com/Sakrecoer/.github-1/assets/3484593/7ada54a5-95e3-4f3d-8bb3-17101790a4ae)](https://github.com/sponsors/dyne)
 
