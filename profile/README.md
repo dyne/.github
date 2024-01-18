@@ -4,7 +4,7 @@
 
 [Dyne.org](https://dyne.org) is a non-profit **free software foundry** and a merry **hacker community**.<br>We have nearly **30 years of expertise** putting computers at work to **empower people**.
 
-**💎 To learn more, head over [our website](https://dyne.org)**
+**💎 To learn more, head over to [our website](https://dyne.org)**
 
 **🌐 Engage with us on the [Social Networks](https://dyne.org/linktree)**
 
