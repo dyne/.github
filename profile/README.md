@@ -10,7 +10,7 @@
 
 **📢 Get news from us on [our blog](https://news.dyne.org) and tune in to our corner of the [fediverse](https://fed.dyne.org)**
 
-[![Github organization banner](https://dyne.org/images/banner/github-organization-banner.jpg)](https://github.com/sponsors/dyne)
+[![Github organization banner](https://dyne.org/images/banner/patreon-banner.jpg)]([https://github.com/sponsors/dyne](https://www.patreon.com/dyneorg))
 
 ## Endorsed, embraced and/or supported by:
 
