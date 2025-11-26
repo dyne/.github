@@ -10,4 +10,4 @@
 
 **📢 Get news from [our blog](https://news.dyne.org) and tune in to our corner of the [fediverse](https://isi.dyne.org)**
 
-[![Github organization banner](https://dyne.org/images/banner/patreon-banner.jpg)]([https://github.com/sponsors/dyne](https://www.patreon.com/dyneorg))
+[![Github organization banner](https://dyne.org/images/banner/patreon-banner.jpg)](https://github.com/sponsors/dyne)
